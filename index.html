@@ -736,7 +736,7 @@ function makeHrefToPDFjs() {
     elementsList = document.getElementsByClassName('file-item-name');
 
     for(i = 0; i < elementsList.length; i++) {
-        document.getElementsByClassName('file-item-name')[i].href = 'https://gharishkumar.github.io/home/pdfjs/web/viewer.html?path=https://gharishkumar.github.io/handouts/' + document.getElementsByClassName('file-item-name')[i].href.split("/").pop();
+        document.getElementsByClassName('file-item-name')[i].href = 'https://gharishkumar.github.io/home/pdfjs/web/viewer.html?path=https://gharishkumar.github.io/class_summary/' + document.getElementsByClassName('file-item-name')[i].href.split("/").pop();
     }
     localStorage.setItem("PDFjs", "1");
     document.getElementsByClassName('dropdown-item')[0].href = 'javascript:makeHrefToDefault()';
