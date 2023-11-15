@@ -437,10 +437,9 @@ body{margin-top:20px;}
     flex-wrap: wrap;
 }
 .file-manager-container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(auto-fill,minmax(127px,1fr));
 }
 .file-item {
     position: relative;
@@ -488,9 +487,8 @@ body{margin-top:20px;}
     overflow: hidden;
 }
 .file-manager-col-view .file-item {
-    margin: 0 0.25rem 0.25rem 0;
+    margin: 0 0 0 0;
     padding: 1.25rem 0 1rem 0;
-    width: 9rem;
     text-align: center;
 }
 [dir="rtl"] .file-manager-col-view .file-item {
